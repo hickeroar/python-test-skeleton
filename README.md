@@ -1,5 +1,5 @@
 # Python Test Skeleton
-### A simple testing skeleton using Coverage, Flake8, and the built in Python `unittest` module.
+#### A simple code quality and unit testing skeleton using Coverage, Flake8, and the built in Python `unittest` module.
 
 ## Dependencies
 * [Coverage](https://pypi.org/project/coverage/)
