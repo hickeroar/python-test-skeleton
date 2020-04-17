@@ -40,5 +40,6 @@ Success: No code quality issues detected.
 ## Using with your own project
 * You will need to update the `MODULE_DIR` variable in `test/test.sh` file to point to the correct module directory instead of `skeleton`.
   * If your project has multiple modules, you will need to update the `test/test.sh` file accordingly.
+* If you expect/desire less than 100% code coverage for your project, update the `MINIMUM_COVERAGE` variable in `test/test.sh` accordingly.
 * The `test/` directory should be an exact mirror of the structure of your module's directory, as shown in the `skeleton` example module.
 * Ensure you include the expected `__init__.py` files in all nested test directories, to enable the test runner to find all your tests.
