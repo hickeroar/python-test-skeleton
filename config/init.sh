@@ -4,9 +4,9 @@ PROJECT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../" >/dev/null 2>&1 && pwd
 cd "${PROJECT_DIR}"/ || exit 1
 
 if command -v pip3 > /dev/null; then
-    echo "Notice: pip3 executable found."
+    echo "Info: pip3 executable found. Using that."
 else
-    echo "Notice: pip3 executable not found. Aliasing to pip."
+    echo "Info: pip3 executable not found. Temporarily aliasing pip3 to pip."
     alias pip3="pip"
 fi
 
@@ -18,6 +18,7 @@ then
 fi
 
 echo "Globally installing 'pip-upgrade' utility (You may be prompted for your password)."
+# shellcheck disable=SC2033
 sudo -H pip3 install --upgrade pip-upgrader -q
 
 echo "Creating Virtual Environment in 'venv' directory."
